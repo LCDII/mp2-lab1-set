@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.10)
 
 set(PROJECT_NAME set)
 project(${PROJECT_NAME})
@@ -23,6 +23,7 @@ include_directories("${MP2_INCLUDE}" gtest)
 # BUILD
 add_subdirectory(src)
 add_subdirectory(samples)
+add_subdirectory(trafficlight_sample)
 add_subdirectory(gtest)
 add_subdirectory(test)
 

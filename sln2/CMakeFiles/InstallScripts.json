@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/cmake_install.cmake",
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/src/cmake_install.cmake",
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/samples/cmake_install.cmake",
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/trafficlight_sample/cmake_install.cmake",
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/gtest/cmake_install.cmake",
+		"C:/Users/\u041b\u0435\u0432/source/repos/mp2-lab1-set-master/sln2/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
