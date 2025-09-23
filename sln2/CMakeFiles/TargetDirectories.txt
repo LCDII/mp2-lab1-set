@@ -1,0 +1,7 @@
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/CMakeFiles/ALL_BUILD.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/src/CMakeFiles/set.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/samples/CMakeFiles/sample_prime_numbers.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/trafficlight_sample/CMakeFiles/traffic_light_sample.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/gtest/CMakeFiles/gtest.dir
+C:/Users/Лев/source/repos/mp2-lab1-set-master/sln2/test/CMakeFiles/test_set.dir
