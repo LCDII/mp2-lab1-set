@@ -34,7 +34,7 @@ TEST(TBitField, can_set_bit)
   EXPECT_EQ(0, bf.GetBit(3));
 
   bf.SetBit(3);
-  EXPECT_NE(0, bf.GetBit(3));
+  EXPECT_NE(0, bf.GetBit(3)); 
 }
 
 TEST(TBitField, can_clear_bit)
