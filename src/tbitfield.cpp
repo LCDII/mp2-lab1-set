@@ -12,11 +12,20 @@
 static const int FAKE_INT = -1;
 static TBitField FAKE_BITFIELD(1);
 
+
+constexpr int Size = sizeof(TELEM)*8;
+constexpr int my_log2(int n) {
+    return (n <= 1) ? 0 : 1 + my_log2(n / 2);
+}
+constexpr int Shift_Bits = my_log2(Size);
+
+
+
 TBitField::TBitField(int len)
 {
     if (len < 0) throw -1;
     BitLen = len;
-    MemLen = (len + sizeof(TELEM) * 8 - 1) >> (int)log2(sizeof(TELEM) * 8);
+    MemLen = (len + Size - 1) >> Shift_Bits;
     pMem = new TELEM[MemLen];
     for (int i = 0; i < MemLen; i++)
     {
@@ -42,12 +51,12 @@ TBitField::~TBitField()
 
 int TBitField::GetMemIndex(const int n) const // индекс Мем для бита n
 {
-    return n >> (int)log2(sizeof(TELEM) * 8);
+    return n >> Shift_Bits;
 }
 
 TELEM TBitField::GetMemMask(const int n) const // битовая маска для бита n
 {
-    return TELEM(1) << (n & (sizeof(TELEM) * 8 - 1));
+    return TELEM(1) << (n & (Size - 1));
 }
 
 // доступ к битам битового поля
@@ -199,7 +208,7 @@ ostream &operator<<(ostream &ostr, const TBitField &bf) // вывод
 {
     for (int i = 0; i < bf.MemLen; i++)
     {
-        int size = sizeof(TELEM) * 8; // колво бит
+        int size = Size; // колво бит
         for (size_t i = 0; i < size; i++)
         {
             if (bf.pMem[i] & (1 << i)) // проверка на существование

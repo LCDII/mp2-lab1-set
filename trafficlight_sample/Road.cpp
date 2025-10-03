@@ -23,6 +23,7 @@ Road& Road::operator=(const Road & road)
 
     ptl = new PTL(*road.ptl);
     ctl = new CTL(*road.ctl);
+    return *this;
 }
 Road::~Road()
 {
